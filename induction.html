@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		table,th,td{
+			border: 1px solid black;
+		}
+		.sh{
+			border:3px solid black;
+			box-shadow:10px 10px red;
+			padding:20px;
+			text-align:center;
+			text-shadow: 2px 3px yellow;
+			border-radius:20px 10px 15px 30px;
+		}
+
+	</style>
+</head>
+<body>s
+		<!-- <h1>Anurag</h1>
+		<h1 style="float:right;">Singh</h1> -->
+	<form>
+		<label>Name:</label>
+		<input type="text" name="name"><br><br>
+
+		<label>Date</label>
+		<input type="date" name=""><br><br>
+
+		<label>Email</label>
+		<input type="email" name=""><br><br>
+
+		<label>Image</label>
+		<input type="file" name=""><br><br>
+
+		<label>message</label>
+		<!-- <input type="textarea" rows="4" cols="10" name=""><br><br> -->
+		<textarea id="w3mission" rows="4" cols="10">
+At w3schools.com you will learn how to make a website. We offer free tutorials in all web development technologies.
+</textarea><br>
+
+	<label>Choose:</label>
+	<select name="choose">
+		<option value="one">One</option>
+		<option value="two">Two</option>
+		<option value="three">Three</option>
+	</select><br>
+
+	<input type="radio" name="gender" value="male">
+	<label>Male</label><br>
+
+	<input type="radio" name="gender" value="female">
+	<label>female</label><br>
+
+	<input type="radio" name="gender" value="other">
+	<label>other</label><br>
+
+	<input type="checkbox" name="check">
+	<label>Remeber</label><br>
+
+
+
+
+
+
+
+		<button type="submit" name="">Submit</button>
+
+
+	</form>
+
+	<div style="background-color:blue; width:100%;height:50px;">
+			<h4>hi welcome to html class</h4>
+
+	</div>
+
+	<table>
+		<tr>
+			<th>Name:</th>
+			<th colspan="3">Email:</th>
+			<th colspan="4">Email:</th>
+		</tr>
+		<tr>
+			<td>Anurag Singh </td>
+			<td>ingh@gmail.com</td>
+			<td>ingh@gmail.com</td>
+
+			<td>Anurag Singhh </td>
+			<td>ingh@gmail.commm</td>
+			<td>ingh@gmail.commm</td>
+			<td>ingh@gmail.commm</td>
+
+		</tr>
+
+
+
+
+
+	</table>
+
+<div class="sh">
+	<h3>anurag singh</h3>
+
+</div><br><br>
+<form action="" method="post" onsubmit="return validateform()" name="myform">
+	
+	<label>Name:</label>
+	<input type="text" name="name" required="">
+
+	<label>Email:</label>
+	<input type="email" name="email" required>
+
+	<label>Number:</label>
+	<input type="number" name="email" required>
+
+	<input type="submit" name="submit" >
+</form>
+	
+<script>
+	function validateform(){
+		var name= document.forms["myform"] ["name"].value;
+		if(name ==''){
+			alert("name cannot be kept empty");
+			return false;
+		}
+
+		var email=document.forms["myform"]["email"].value;
+		if(email==''){
+			alert('email cannot be kept empty');
+			return false;
+		}
+
+
+	}
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>	
